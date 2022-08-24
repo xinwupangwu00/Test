@@ -8,7 +8,7 @@ int main()
     DIR *dirPtr = NULL;
     struct dirent *dirBuf;
    
-    if((dirPtr = opendir("../workspace")) == NULL)
+    if((dirPtr = opendir("../../workspace")) == NULL)
     {
         perror("open dir failed!");
         exit(-1);
@@ -22,7 +22,7 @@ int main()
         exit(-1);
     }
     else
-        printf("end of the directory");
+        printf("end of the directory\n");
     closedir(dirPtr);
     return 0;
 }
